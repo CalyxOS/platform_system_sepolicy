@@ -266,3 +266,7 @@ init.userspace_reboot.watchdog.timeoutmillis u:object_r:userspace_reboot_config_
 
 # surfaceflinger-settable
 graphics.display.kernel_idle_timer.enabled u:object_r:surfaceflinger_display_prop:s0 exact bool
+
+# These should be in vendor/calyx/common/private
+sys.update.             u:object_r:shell_prop:s0
+security.deny_new_usb   u:object_r:system_prop:s0
