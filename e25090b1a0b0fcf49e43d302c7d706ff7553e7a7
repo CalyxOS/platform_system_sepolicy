@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b58e27b9_afed00af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-10-06T16:55:20Z",
+      "side": 1,
+      "message": "Don\u0027t think microG ever relied on this. Works fine.",
+      "revId": "e25090b1a0b0fcf49e43d302c7d706ff7553e7a7",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
