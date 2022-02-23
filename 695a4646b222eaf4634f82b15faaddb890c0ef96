@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a14cb250_9e2cdea6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-02-23T22:10:09Z",
+      "side": 1,
+      "message": "1874094: Grant permission for mediatranscoding hal_allocator for GSI image | https://android-review.googlesource.com/c/platform/system/sepolicy/+/1874094\n\nWhat\u0027s this needed for on our devices?",
+      "revId": "695a4646b222eaf4634f82b15faaddb890c0ef96",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
