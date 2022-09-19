@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65d11166_218903bf",
+        "filename": "prebuilts/api/33.0/public/domain.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-09-19T21:16:03Z",
+      "side": 0,
+      "message": "We might need to adjust this, too... Looks like abstract sockets can use SOCK_DGRAM. See: https://www.hitchhikersguidetolearning.com/2020/04/25/the-abstract-namespace-af_unix-datagram-code-example//",
+      "revId": "7711715b4f5cce4def3afe5580e68fa036c5c05e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
