@@ -27,7 +27,12 @@ allow domain proc_net_type:dir search;
 r_dir_file(domain, self)
 allow domain self:{ fifo_file file } rw_file_perms;
 allow domain self:unix_dgram_socket { create_socket_perms sendto };
-allow domain self:unix_stream_socket { create_stream_socket_perms connectto };
+
+# Untrusted apps are allowed to do everything they normally can with unix stream sockets *except* bind.
+# This mitigates discovery of other sockets and improvised communication as a result.
+# Zygote communication is covered by app_zygote rather than untrusted_app and therefore unaffected by this change.
+allow { domain -untrusted_app } self:unix_stream_socket { create_stream_socket_perms connectto };
+allow untrusted_app self:unix_stream_socket { listen accept create ioctl read getattr write setattr lock append connect getopt setopt shutdown map connectto };
 
 # Inherit or receive open files from others.
 allow domain init:fd use;
