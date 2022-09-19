@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "881bd2d6_cef98896",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-09-19T21:08:42Z",
+      "side": 1,
+      "message": "Works for me in an emulator. Chromium works too. Doesn\u0027t seem to break filesystem unix sockets (tested with netcat-openbsd in Termux). Needs to be tested with apps in the wild.",
+      "revId": "3b6dae01b1c2948c259f74340ad29b305e1455d1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
