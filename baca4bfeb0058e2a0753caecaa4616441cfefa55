@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26c644c5_6cb17a22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-09-19T21:42:59Z",
+      "side": 1,
+      "message": "Chrome dev tools probably impacted, seeing denials there. I\u0027m not sure if it\u0027s better to keep track of things like this in the GitLab issue or here.",
+      "revId": "baca4bfeb0058e2a0753caecaa4616441cfefa55",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
