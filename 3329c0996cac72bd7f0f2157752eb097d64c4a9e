@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca6a43fc_93054d2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-17T20:24:42Z",
+      "side": 1,
+      "message": "I see the send-upstream hashtag. To AOSP, LineageOS, or both?",
+      "revId": "3329c0996cac72bd7f0f2157752eb097d64c4a9e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
