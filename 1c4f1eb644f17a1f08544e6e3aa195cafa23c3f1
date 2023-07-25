@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8a473a2_5871b853",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-25T13:11:31Z",
+      "side": 1,
+      "message": "AOSP main branch has changed significantly, with mac_permissions.mk no longer existing nor moved. Commit 6d79030d0cf \"Build mac_permissions.xml with Soong\" is responsible for this change. The problem might be fixed there. We can keep an eye out in Android 14.",
+      "revId": "1c4f1eb644f17a1f08544e6e3aa195cafa23c3f1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
