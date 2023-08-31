@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6bc8b42_de0773f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-08-31T14:04:02Z",
+      "side": 1,
+      "message": "Seems very wrong but seemingly needed to match gitlab/android13",
+      "revId": "8641c33d8fcaa149252ac0ef773c0759ecfb54af",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
