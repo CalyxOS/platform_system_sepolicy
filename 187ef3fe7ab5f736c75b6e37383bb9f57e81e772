@@ -16,6 +16,24 @@
       "message": "Seems very wrong but seemingly needed to match gitlab/android13",
       "revId": "187ef3fe7ab5f736c75b6e37383bb9f57e81e772",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "048b3d3a_8323a670",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-09-01T22:38:53Z",
+      "side": 1,
+      "message": "I remember these from a monthly merge. But yes, seems wrong that rebase has them still.",
+      "parentUuid": "6fad7e15_a82d7e4f",
+      "revId": "187ef3fe7ab5f736c75b6e37383bb9f57e81e772",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
