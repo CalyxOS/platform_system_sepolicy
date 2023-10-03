@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "587bb345_7974a70d",
+        "filename": "private/untrusted_app_30.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-03T22:55:36Z",
+      "side": 1,
+      "message": "Can confirm, https://android.googlesource.com/platform/system/sepolicy/+/refs/tags/android-13.0.0_r75/private/untrusted_app_30.te#25",
+      "revId": "8fa008f31344870eedddc1b7050ae82983b59394",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
