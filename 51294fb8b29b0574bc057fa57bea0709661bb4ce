@@ -16,6 +16,24 @@
       "message": "Seems very wrong but seemingly needed to match gitlab/android13",
       "revId": "51294fb8b29b0574bc057fa57bea0709661bb4ce",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40ffc194_43832828",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-10-03T22:13:34Z",
+      "side": 1,
+      "message": "These commits were only present in QPR2 and not QPR3, so we should revert them in gitlab/android13",
+      "parentUuid": "3357c45c_6e374c93",
+      "revId": "51294fb8b29b0574bc057fa57bea0709661bb4ce",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
