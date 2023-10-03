@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "092db3e9_a3c81285",
+        "filename": "private/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 834,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-03T22:24:33Z",
+      "side": 1,
+      "message": "Confirmed, https://android.googlesource.com/platform/system/sepolicy/+/refs/tags/android-13.0.0_r75/private/property_contexts#827",
+      "revId": "7460038bbe48f8fa1b75e38361005f7758bbac97",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
