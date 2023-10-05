@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "323903d4_83f6d895",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-05T16:32:46Z",
+      "side": 1,
+      "message": "Fixed in chain https://review.calyxos.org/c/CalyxOS/platform_system_sepolicy/+/20739/1\n\nIt\u0027s post 4.12.2 / post rebase.",
+      "revId": "570396541061e4c6472077ad420c83cdd9538bf7",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
