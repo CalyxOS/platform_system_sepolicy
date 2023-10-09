@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c6a92f3_09f4301e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-09T23:24:28Z",
+      "side": 1,
+      "message": "bluejay:/ # ps -AZ | grep -i gms\nu:r:priv_app:s0:c512,c768      u0_a128       7347   892   15088024 140748 do_epoll_wait       0 S com.google.android.gms\nu:r:priv_app:s0:c512,c768      u0_a128       7414   892   14780372 105216 do_epoll_wait       0 S com.google.android.gms:signature\nu:r:priv_app:s0:c522,c768      u10_a128      8051   892   14770116 101680 do_freezer_trap     0 S com.google.android.gms:signature\nu:r:priv_app:s0:c522,c768      u10_a128      8805   892   14814084 115272 do_epoll_wait       0 S com.google.android.gms:persistent\nu:r:priv_app:s0:c512,c768      u0_a128       9563   892   14820780 120412 do_epoll_wait       0 S com.google.android.gms:persistent",
+      "revId": "465659833dc2323382ed1c8326bb5526f0cf888c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
