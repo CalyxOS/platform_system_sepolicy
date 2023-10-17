@@ -3,6 +3,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "8f203116_e41c45fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-17T22:35:32Z",
+      "side": 1,
+      "message": "Tested using tmux, simple `getprop | grep`",
+      "revId": "7460038bbe48f8fa1b75e38361005f7758bbac97",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "092db3e9_a3c81285",
         "filename": "private/property_contexts",
         "patchSetId": 1
