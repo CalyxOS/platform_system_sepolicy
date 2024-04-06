@@ -413,6 +413,9 @@ genfscon binfmt_misc / u:object_r:binfmt_miscfs:s0
 
 genfscon bpf / u:object_r:fs_bpf:s0
 genfscon bpf /loader u:object_r:fs_bpf_loader:s0
+genfscon bpf /firewall_private u:object_r:fs_bpf_firewall_private:s0
+genfscon bpf /firewall_readonly u:object_r:fs_bpf_firewall_readonly:s0
+genfscon bpf /firewall_shared u:object_r:fs_bpf_firewall_shared:s0
 genfscon bpf /net_private u:object_r:fs_bpf_net_private:s0
 genfscon bpf /net_shared u:object_r:fs_bpf_net_shared:s0
 genfscon bpf /netd_readonly u:object_r:fs_bpf_netd_readonly:s0

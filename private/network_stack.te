@@ -61,8 +61,8 @@ hal_client_domain(network_stack, hal_tetheroffload)
 allow network_stack self:netlink_netfilter_socket create_socket_perms_no_ioctl;
 allow network_stack network_stack_service:service_manager find;
 # allow Tethering(network_stack process) to run/update/read the eBPF maps to offload tethering traffic by eBPF.
-allow network_stack { fs_bpf_net_private fs_bpf_net_shared fs_bpf_netd_readonly fs_bpf_netd_shared fs_bpf_tethering }:dir search;
-allow network_stack { fs_bpf_net_private fs_bpf_net_shared fs_bpf_netd_readonly fs_bpf_netd_shared fs_bpf_tethering }:file { getattr read write };
+allow network_stack { fs_bpf_firewall_private fs_bpf_firewall_readonly fs_bpf_firewall_shared fs_bpf_net_private fs_bpf_net_shared fs_bpf_netd_readonly fs_bpf_netd_shared fs_bpf_tethering }:dir search;
+allow network_stack { fs_bpf_firewall_private fs_bpf_firewall_readonly fs_bpf_firewall_shared fs_bpf_net_private fs_bpf_net_shared fs_bpf_netd_readonly fs_bpf_netd_shared fs_bpf_tethering }:file { getattr read write };
 allow network_stack bpfloader:bpf { map_read map_write prog_run };
 # allow Tethering(network_stack process) to read flag value in tethering_u_or_later_native namespace
 get_prop(network_stack, device_config_tethering_u_or_later_native_prop)
@@ -83,15 +83,31 @@ allowxperm network_stack tun_device:chr_file ioctl { TUNGETIFF TUNSETIFF TUNSETL
 neverallow { domain -bpfloader -network_stack } fs_bpf_net_private:dir ~getattr;
 neverallow { domain -bpfloader -network_stack } fs_bpf_net_private:file *;
 
+# T+: Only the bpfloader, network_stack and system_server should ever touch 'fs_bpf_firewall_private' programs/maps.
+neverallow { domain -bpfloader -network_stack -system_server } fs_bpf_firewall_private:dir ~getattr;
+neverallow { domain -bpfloader -network_stack -system_server } fs_bpf_firewall_private:file *;
+
 # T+: Only the bpfloader, network_stack and system_server should ever touch 'fs_bpf_net_shared' programs/maps.
 neverallow { domain -bpfloader -network_stack -system_server } fs_bpf_net_shared:dir ~getattr;
 neverallow { domain -bpfloader -network_stack -system_server } fs_bpf_net_shared:file *;
+
+# T+: Only the bpfloader, netd, network_stack and system_server should ever touch 'fs_bpf_firewall_readonly' programs/maps.
+# netd's access should be readonly
+neverallow { domain -bpfloader -netd -network_stack -system_server } fs_bpf_firewall_readonly:dir ~getattr;
+neverallow { domain -bpfloader -netd -network_stack -system_server } fs_bpf_firewall_readonly:file *;
+neverallow netd fs_bpf_firewall_readonly:file write;
 
 # T+: Only the bpfloader, netd, network_stack and system_server should ever touch 'fs_bpf_netd_readonly' programs/maps.
 # netd's access should be readonly
 neverallow { domain -bpfloader -netd -network_stack -system_server } fs_bpf_netd_readonly:dir ~getattr;
 neverallow { domain -bpfloader -netd -network_stack -system_server } fs_bpf_netd_readonly:file *;
 neverallow netd fs_bpf_netd_readonly:file write;
+
+# T+: Only the bpfloader, netd, netutils_wrapper, network_stack and system_server should ever touch 'fs_bpf_firewall_shared' programs/maps.
+# netutils_wrapper requires access to be able to run iptables and only needs readonly access
+neverallow { domain -bpfloader -netd -netutils_wrapper -network_stack -system_server } fs_bpf_firewall_shared:dir ~getattr;
+neverallow { domain -bpfloader -netd -netutils_wrapper -network_stack -system_server } fs_bpf_firewall_shared:file *;
+neverallow netutils_wrapper fs_bpf_firewall_shared:file write;
 
 # T+: Only the bpfloader, netd, netutils_wrapper, network_stack and system_server should ever touch 'fs_bpf_netd_shared' programs/maps.
 # netutils_wrapper requires access to be able to run iptables and only needs readonly access
