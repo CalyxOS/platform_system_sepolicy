@@ -16,6 +16,24 @@
       "message": "This needs to be tested while building a recent device, we might need to update the prebuilts too",
       "revId": "6ffe65785ee33ad0dc128c1fe1ff233713f31954",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aaeee311_204e06b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-06-15T00:21:50Z",
+      "side": 1,
+      "message": "bluejay builds fine",
+      "parentUuid": "b5facb1d_d9883d59",
+      "revId": "6ffe65785ee33ad0dc128c1fe1ff233713f31954",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
