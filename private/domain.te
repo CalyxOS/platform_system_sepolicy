@@ -883,6 +883,7 @@ neverallow {
 
 neverallow {
   domain
+  -fastbootd
   -init
   -recovery
   -system_server

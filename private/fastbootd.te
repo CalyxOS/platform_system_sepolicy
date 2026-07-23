@@ -110,6 +110,7 @@ recovery_only(`
   }:blk_file ioctl { BLKSECDISCARD BLKDISCARD };
 
   allow fastbootd misc_block_device:blk_file rw_file_perms;
+  allow fastbootd frp_block_device:blk_file rw_file_perms;
 
   allow fastbootd proc_cmdline:file r_file_perms;
   allow fastbootd rootfs:dir r_dir_perms;
